@@ -192,6 +192,7 @@ public class Main {
 
         try {
             FileManager.write(conversionList);
+            FileManager.openFileAndDisplay();
         } catch (IOException e) {
             e.printStackTrace();
         }

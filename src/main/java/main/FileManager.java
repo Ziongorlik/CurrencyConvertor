@@ -48,4 +48,12 @@ public class FileManager {
 
         return resultList;
     }
+
+    /***
+     * Automatically opens the text file
+     * @throws IOException
+     */
+    public static void openFileAndDisplay() throws IOException {
+        java.awt.Desktop.getDesktop().open(new File(FILE_NAME));
+    }
 }
